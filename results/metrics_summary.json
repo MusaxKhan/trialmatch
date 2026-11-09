@@ -1,0 +1,17 @@
+{
+ "Majority label per type + sentence 0": {
+  "accuracy": 0.6262135922330098,
+  "macro_f1": 0.27176538240368026,
+  "evidence_micro_f1": 0.25333333333333335
+ },
+ "Qwen2.5-1.5B zero-shot (before)": {
+  "accuracy": 0.12135922330097088,
+  "macro_f1": 0.17150600077429345,
+  "evidence_micro_f1": 0.16744186046511628
+ },
+ "Qwen2.5-1.5B + LoRA (after)": {
+  "accuracy": 0.7233009708737864,
+  "macro_f1": 0.6845937939876026,
+  "evidence_micro_f1": 0.5591397849462365
+ }
+}

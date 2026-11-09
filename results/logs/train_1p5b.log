@@ -1,0 +1,26 @@
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:03<20:02,  3.57s/it]Loading weights:  19%|█▊        | 63/338 [00:03<00:12, 22.79it/s]Loading weights:  23%|██▎       | 78/338 [00:04<00:10, 23.94it/s]Loading weights:  26%|██▌       | 88/338 [00:04<00:09, 26.42it/s]Loading weights:  28%|██▊       | 96/338 [00:04<00:08, 27.92it/s]Loading weights:  30%|███       | 103/338 [00:05<00:08, 26.68it/s]Loading weights:  33%|███▎      | 111/338 [00:05<00:07, 28.68it/s]Loading weights:  34%|███▍      | 116/338 [00:05<00:08, 27.47it/s]Loading weights:  37%|███▋      | 124/338 [00:05<00:07, 29.60it/s]Loading weights:  40%|███▉      | 135/338 [00:06<00:06, 31.58it/s]Loading weights:  41%|████      | 139/338 [00:06<00:07, 28.35it/s]Loading weights:  44%|████▍     | 148/338 [00:06<00:05, 31.68it/s]Loading weights:  47%|████▋     | 159/338 [00:06<00:05, 33.16it/s]Loading weights:  48%|████▊     | 163/338 [00:07<00:05, 29.19it/s]Loading weights:  51%|█████     | 172/338 [00:07<00:05, 32.53it/s]Loading weights:  54%|█████▍    | 183/338 [00:07<00:04, 33.55it/s]Loading weights:  55%|█████▌    | 187/338 [00:07<00:05, 29.58it/s]Loading weights:  58%|█████▊    | 196/338 [00:07<00:04, 32.78it/s]Loading weights:  61%|██████    | 207/338 [00:08<00:04, 32.43it/s]Loading weights:  62%|██████▏   | 211/338 [00:08<00:04, 26.95it/s]Loading weights:  65%|██████▍   | 219/338 [00:08<00:04, 26.87it/s]Loading weights:  66%|██████▌   | 222/338 [00:09<00:05, 21.05it/s]Loading weights:  68%|██████▊   | 231/338 [00:09<00:04, 26.69it/s]Loading weights:  69%|██████▉   | 234/338 [00:09<00:05, 18.92it/s]Loading weights:  72%|███████▏  | 243/338 [00:10<00:04, 22.57it/s]Loading weights:  73%|███████▎  | 246/338 [00:10<00:04, 18.76it/s]Loading weights:  75%|███████▌  | 255/338 [00:10<00:03, 25.60it/s]Loading weights:  77%|███████▋  | 259/338 [00:10<00:03, 21.72it/s]Loading weights:  79%|███████▉  | 267/338 [00:11<00:02, 25.57it/s]Loading weights:  80%|███████▉  | 270/338 [00:11<00:03, 21.95it/s]Loading weights:  83%|████████▎ | 279/338 [00:11<00:01, 31.92it/s]Loading weights:  84%|████████▍ | 284/338 [00:11<00:01, 28.74it/s]Loading weights:  86%|████████▌ | 291/338 [00:11<00:01, 32.27it/s]Loading weights:  87%|████████▋ | 295/338 [00:11<00:01, 29.28it/s]Loading weights:  90%|████████▉ | 303/338 [00:12<00:00, 36.81it/s]Loading weights:  91%|█████████ | 308/338 [00:12<00:00, 31.77it/s]Loading weights:  93%|█████████▎| 315/338 [00:12<00:00, 33.92it/s]Loading weights:  94%|█████████▍| 319/338 [00:12<00:00, 28.63it/s]Loading weights:  97%|█████████▋| 327/338 [00:12<00:00, 36.43it/s]Loading weights:  98%|█████████▊| 332/338 [00:13<00:00, 32.59it/s]Loading weights: 100%|██████████| 338/338 [00:13<00:00, 25.87it/s]
+train seq tokens max/mean: 581 286 truncated examples: 0 target tokens mean: 15.393034825870647
+trainable params: 18464768 dtype: torch.float32
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+step 10 / 152 loss 0.213 52 s
+step 20 / 152 loss 0.2013 99 s
+step 30 / 152 loss 0.0999 148 s
+EPOCH 1 {'epoch': 1, 'val_acc': 0.6796116504854369, 'val_macro_f1': 0.48073938395705396, 'val_evid_f1': 0.4956521739130435, 'invalid': 1}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  saved best epoch 1
+step 40 / 152 loss 0.0663 10 s
+step 50 / 152 loss 0.1049 59 s
+step 60 / 152 loss 0.0565 106 s
+step 70 / 152 loss 0.0712 153 s
+EPOCH 2 {'epoch': 2, 'val_acc': 0.7475728155339806, 'val_macro_f1': 0.4547464678578536, 'val_evid_f1': 0.5767441860465116, 'invalid': 0}
+step 80 / 152 loss 0.0332 21 s
+step 90 / 152 loss 0.0476 70 s
+step 100 / 152 loss 0.0526 119 s
+step 110 / 152 loss 0.0483 166 s
+EPOCH 3 {'epoch': 3, 'val_acc': 0.7233009708737864, 'val_macro_f1': 0.432171839459975, 'val_evid_f1': 0.5714285714285715, 'invalid': 0}
+step 120 / 152 loss 0.0121 29 s
+step 130 / 152 loss 0.0215 78 s
+step 140 / 152 loss 0.0147 124 s
+step 150 / 152 loss 0.0179 172 s
+EPOCH 4 {'epoch': 4, 'val_acc': 0.7038834951456311, 'val_macro_f1': 0.4364331407024084, 'val_evid_f1': 0.6101694915254238, 'invalid': 0}
+DONE best val macro-F1 0.48073938395705396

@@ -1,0 +1,16 @@
+INFO:     Started server process [22386]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<04:44,  1.18it/s]Loading weights:  16%|█▌        | 53/338 [00:00<00:03, 75.50it/s]Loading weights:  24%|██▍       | 82/338 [00:01<00:02, 93.44it/s]Loading weights:  31%|███       | 104/338 [00:01<00:02, 99.74it/s]Loading weights:  36%|███▌      | 122/338 [00:01<00:02, 106.80it/s]Loading weights:  41%|████      | 139/338 [00:01<00:01, 106.75it/s]Loading weights:  46%|████▌     | 154/338 [00:01<00:01, 111.36it/s]Loading weights:  50%|████▉     | 168/338 [00:01<00:01, 108.63it/s]Loading weights:  54%|█████▎    | 181/338 [00:02<00:01, 105.51it/s]Loading weights:  57%|█████▋    | 193/338 [00:02<00:01, 103.62it/s]Loading weights:  61%|██████    | 205/338 [00:02<00:01, 91.26it/s] Loading weights:  64%|██████▎   | 215/338 [00:02<00:01, 86.90it/s]Loading weights:  67%|██████▋   | 225/338 [00:02<00:01, 84.99it/s]Loading weights:  69%|██████▉   | 234/338 [00:02<00:01, 75.05it/s]Loading weights:  72%|███████▏  | 244/338 [00:02<00:01, 80.02it/s]Loading weights:  76%|███████▌  | 256/338 [00:02<00:00, 84.41it/s]Loading weights:  80%|███████▉  | 269/338 [00:03<00:00, 87.19it/s]Loading weights:  83%|████████▎ | 279/338 [00:03<00:00, 63.74it/s]Loading weights:  85%|████████▍ | 287/338 [00:03<00:01, 46.96it/s]Loading weights:  87%|████████▋ | 293/338 [00:04<00:01, 29.82it/s]Loading weights:  90%|████████▉ | 303/338 [00:04<00:01, 31.20it/s]Loading weights:  91%|█████████ | 308/338 [00:04<00:01, 28.08it/s]Loading weights:  93%|█████████▎| 315/338 [00:04<00:00, 31.10it/s]Loading weights:  94%|█████████▍| 319/338 [00:05<00:00, 25.33it/s]Loading weights:  97%|█████████▋| 327/338 [00:05<00:00, 27.13it/s]Loading weights:  98%|█████████▊| 331/338 [00:05<00:00, 22.39it/s]Loading weights: 100%|██████████| 338/338 [00:05<00:00, 58.60it/s]
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<02:38,  1.83it/s]Loading weights:  43%|████▎     | 124/290 [00:00<00:00, 253.18it/s]Loading weights:  67%|██████▋   | 193/290 [00:00<00:00, 301.18it/s]Loading weights:  86%|████████▌ | 249/290 [00:01<00:00, 302.16it/s]Loading weights: 100%|██████████| 290/290 [00:01<00:00, 256.14it/s]
+INFO:     127.0.0.1:42484 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45348 - "POST /api/screen HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52680 - "POST /api/screen HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37672 - "POST /api/screen HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:37680 - "POST /api/screen HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:37694 - "POST /api/screen HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:37696 - "POST /api/screen HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:37706 - "POST /api/compare HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42678 - "POST /api/attention HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42688 - "POST /api/attention HTTP/1.1" 422 Unprocessable Content

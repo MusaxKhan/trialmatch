@@ -1,0 +1,32 @@
+{
+ "forward_vs_hf_fp32": {
+  "max_abs_logit_diff": 8.487701416015625e-05,
+  "argmax_agree_all_positions": true,
+  "T": 220
+ },
+ "equivalence_fp32": [
+  {
+   "in_len": 128,
+   "out_len": 64,
+   "cached_eq_nocache": true,
+   "cached_eq_hf": false
+  },
+  {
+   "in_len": 512,
+   "out_len": 64,
+   "cached_eq_nocache": true,
+   "cached_eq_hf": false
+  },
+  {
+   "in_len": 1024,
+   "out_len": 64,
+   "cached_eq_nocache": true,
+   "cached_eq_hf": false
+  }
+ ],
+ "speculative_fp32": {
+  "n": 20,
+  "token_identical": 20,
+  "acceptance": 0.8513513513513513
+ }
+}

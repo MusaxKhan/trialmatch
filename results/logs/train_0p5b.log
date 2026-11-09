@@ -1,0 +1,31 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<02:35,  1.85it/s]Loading weights:  39%|███▉      | 113/290 [00:00<00:00, 226.85it/s]Loading weights:  58%|█████▊    | 169/290 [00:00<00:00, 277.82it/s]Loading weights:  75%|███████▌  | 218/290 [00:00<00:00, 288.71it/s]Loading weights:  90%|████████▉ | 260/290 [00:01<00:00, 283.92it/s]Loading weights: 100%|██████████| 290/290 [00:01<00:00, 246.95it/s]
+BASE val (acc, macroF1, evidF1, invalid): {'overall': (0.17, 0.117, 0.026, 140), 'inclusion': (0.53, 0.175, 0.038, 0), 'exclusion': (0.0, 0.0, 0.0, 140)} 26 s
+train seq tokens max/mean: 581 286 truncated examples: 0 target tokens mean: 15.393034825870647
+trainable params: 8798208 dtype: torch.float32
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[W1109 10:35:54.773907778 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1226833920 bytes (free: 861732864, total: 15637086208).
+step 10 / 152 loss 0.2163 24 s
+step 20 / 152 loss 0.2135 46 s
+[W1109 10:36:44.193453360 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1411383296 bytes (free: 536674304, total: 15637086208).
+step 30 / 152 loss 0.1585 70 s
+EPOCH 1 {'epoch': 1, 'val_acc': 0.6747572815533981, 'val_macro_f1': 0.3990953310406791, 'val_evid_f1': 0.35820895522388063, 'invalid': 0}
+  saved best epoch 1
+step 40 / 152 loss 0.0811 8 s
+step 50 / 152 loss 0.1166 36 s
+step 60 / 152 loss 0.1124 59 s
+step 70 / 152 loss 0.1044 82 s
+EPOCH 2 {'epoch': 2, 'val_acc': 0.6941747572815534, 'val_macro_f1': 0.5233095913197774, 'val_evid_f1': 0.38345864661654133, 'invalid': 0}
+  saved best epoch 2
+step 80 / 152 loss 0.1534 12 s
+step 90 / 152 loss 0.0484 35 s
+step 100 / 152 loss 0.0441 59 s
+step 110 / 152 loss 0.0336 81 s
+EPOCH 3 {'epoch': 3, 'val_acc': 0.7281553398058253, 'val_macro_f1': 0.5404139465924364, 'val_evid_f1': 0.4135338345864662, 'invalid': 0}
+  saved best epoch 3
+step 120 / 152 loss 0.0634 13 s
+step 130 / 152 loss 0.0698 37 s
+step 140 / 152 loss 0.0366 59 s
+step 150 / 152 loss 0.0355 81 s
+EPOCH 4 {'epoch': 4, 'val_acc': 0.6747572815533981, 'val_macro_f1': 0.40662455823746146, 'val_evid_f1': 0.4444444444444444, 'invalid': 0}
+DONE best val macro-F1 0.5404139465924364

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+adapters/*/adapter_model.safetensors
+report/*.aux
+report/*.log
+report/*.out
+report/*.synctex.gz
+report/*.bbl
+report/*.blg

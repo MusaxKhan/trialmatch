@@ -1,0 +1,20 @@
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<03:50,  1.46it/s]Loading weights:  19%|█▉        | 64/338 [00:00<00:02, 110.07it/s]Loading weights:  30%|██▉       | 101/338 [00:01<00:02, 117.15it/s]Loading weights:  38%|███▊      | 127/338 [00:01<00:01, 120.47it/s]Loading weights:  44%|████▍     | 148/338 [00:01<00:01, 126.91it/s]Loading weights:  49%|████▉     | 167/338 [00:01<00:01, 134.82it/s]Loading weights:  55%|█████▍    | 185/338 [00:01<00:01, 128.05it/s]Loading weights:  61%|██████    | 207/338 [00:01<00:00, 141.61it/s]Loading weights:  66%|██████▋   | 224/338 [00:01<00:00, 144.02it/s]Loading weights:  72%|███████▏  | 243/338 [00:02<00:00, 149.99it/s]Loading weights:  77%|███████▋  | 260/338 [00:02<00:00, 143.77it/s]Loading weights:  83%|████████▎ | 279/338 [00:02<00:00, 149.32it/s]Loading weights:  87%|████████▋ | 295/338 [00:02<00:00, 142.73it/s]Loading weights:  93%|█████████▎| 315/338 [00:02<00:00, 149.69it/s]Loading weights:  98%|█████████▊| 331/338 [00:02<00:00, 143.16it/s]Loading weights: 100%|██████████| 338/338 [00:02<00:00, 127.17it/s]
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<02:14,  2.14it/s]Loading weights:  55%|█████▍    | 159/290 [00:00<00:00, 370.35it/s]Loading weights:  87%|████████▋ | 251/290 [00:00<00:00, 419.49it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 352.87it/s]
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:01<06:20,  1.13s/it]Loading weights:  25%|██▍       | 83/338 [00:01<00:02, 92.89it/s]Loading weights:  39%|███▉      | 132/338 [00:01<00:02, 100.91it/s]Loading weights:  49%|████▊     | 164/338 [00:01<00:01, 104.31it/s]Loading weights:  56%|█████▌    | 188/338 [00:02<00:01, 103.42it/s]Loading weights:  61%|██████    | 207/338 [00:02<00:01, 113.99it/s]Loading weights:  67%|██████▋   | 226/338 [00:02<00:01, 109.83it/s]Loading weights:  72%|███████▏  | 244/338 [00:02<00:00, 119.73it/s]Loading weights:  77%|███████▋  | 260/338 [00:02<00:00, 126.27it/s]Loading weights:  83%|████████▎ | 279/338 [00:02<00:00, 137.43it/s]Loading weights:  88%|████████▊ | 296/338 [00:02<00:00, 141.47it/s]Loading weights:  93%|█████████▎| 315/338 [00:03<00:00, 151.88it/s]Loading weights:  98%|█████████▊| 332/338 [00:03<00:00, 146.33it/s]Loading weights: 100%|██████████| 338/338 [00:03<00:00, 107.46it/s]
+{'hf_default_generation_config': {'do_sample': True, 'temperature': 0.7, 'top_k': 20, 'top_p': 0.8, 'repetition_penalty': 1.1}}
+[transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[transformers] Passing `generation_config` together with generation-related arguments=({'eos_token_id', 'max_new_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+{'in_len': 128, 'out_len': 16, 'cached_eq_hf_pure_greedy': True}
+{'in_len': 128, 'out_len': 64, 'cached_eq_hf_pure_greedy': True}
+{'in_len': 128, 'out_len': 128, 'cached_eq_hf_pure_greedy': True}
+{'in_len': 512, 'out_len': 16, 'cached_eq_hf_pure_greedy': True}
+{'in_len': 512, 'out_len': 64, 'cached_eq_hf_pure_greedy': True}
+{'in_len': 512, 'out_len': 128, 'cached_eq_hf_pure_greedy': True}
+{'in_len': 1024, 'out_len': 16, 'cached_eq_hf_pure_greedy': True}
+{'in_len': 1024, 'out_len': 64, 'cached_eq_hf_pure_greedy': True}
+{'in_len': 1024, 'out_len': 128, 'cached_eq_hf_pure_greedy': True}
+{'n': 206, 'identical': 206}
+[transformers] Passing `generation_config` together with generation-related arguments=({'min_new_tokens', 'max_new_tokens', 'use_cache'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+{'n': 20, 'identical': 18}
+HFEQ DONE
+CHAIN6_DONE

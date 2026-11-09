@@ -1,0 +1,177 @@
+[
+ {
+  "annotation_id": 166,
+  "type": "exclusion",
+  "criterion": "Significant upper limb peripheral arterial disease",
+  "gold": "not excluded",
+  "pred": "excluded",
+  "gold_ev": [],
+  "pred_ev": [
+   1
+  ],
+  "note": "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.\n1. She is now complaining of a cool right foot.\n2. Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+  "raw": "{\"label\": \"excluded\", \"evidence\": [1]}",
+  "kind": "not excluded->excluded"
+ },
+ {
+  "annotation_id": 174,
+  "type": "exclusion",
+  "criterion": "Patients with previous axillary surgery",
+  "gold": "not enough information",
+  "pred": "not excluded",
+  "gold_ev": [],
+  "pred_ev": [],
+  "note": "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.\n1. She is now complaining of a cool right foot.\n2. Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+  "raw": "{\"label\": \"not excluded\", \"evidence\": []}",
+  "kind": "unsupported"
+ },
+ {
+  "annotation_id": 196,
+  "type": "exclusion",
+  "criterion": "Less than 18 years of age",
+  "gold": "not excluded",
+  "pred": "not enough information",
+  "gold_ev": [
+   0
+  ],
+  "pred_ev": [
+   0
+  ],
+  "note": "0. A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.\n1. She denies trauma.\n2. On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.\n3. Her body temperature is normal and her blood pressure is 80/60.\n4. Her right arm has no discoloration or movement limitation.\n5. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+  "raw": "{\"label\": \"not enough information\", \"evidence\": [0]}",
+  "kind": "not excluded->not enough information"
+ },
+ {
+  "annotation_id": 322,
+  "type": "exclusion",
+  "criterion": "Pregnant women or women of childbearing age who do not have adequate contraception.",
+  "gold": "not excluded",
+  "pred": "not applicable",
+  "gold_ev": [
+   0
+  ],
+  "pred_ev": [],
+  "note": "0. A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.\n1. The physical examination is remarkable for tenderness and positive Murphy sign.\n2. Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.\n3. Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.\n4. After surgery, the patient is taken to the ICU.\n5. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+  "raw": "{\"label\": \"not applicable\", \"evidence\": []}",
+  "kind": "not excluded->not applicable"
+ },
+ {
+  "annotation_id": 407,
+  "type": "exclusion",
+  "criterion": "Female subject of child-bearing potential who is not using a medically accepted safe method of contraception. All female subjects of child-bearing potential must have a negative urine pregnancy test at the Screening and Baseline Visits. As interaction studies between ABR-215757 and oral contraceptives have not yet been performed, women using the contraceptive pill must also use a complementary contraceptive device, i.e. barrier method, during the treatment period and for at least 1 month thereafter.",
+  "gold": "not enough information",
+  "pred": "not applicable",
+  "gold_ev": [],
+  "pred_ev": [
+   0
+  ],
+  "note": "0. A 21-year-old female is evaluated for progressive arthralgias and malaise.\n1. On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.\n2. Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.\n3. Her urine is positive for protein and RBC casts.\n4. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+  "raw": "{\"label\": \"not applicable\", \"evidence\": [0]}",
+  "kind": "not enough information->not applicable"
+ },
+ {
+  "annotation_id": 767,
+  "type": "exclusion",
+  "criterion": "Symptoms that collectively suggest nonstreptococcal T/P (eg, laryngitis, coryza, conjunctivitis, diarrhea, cough)",
+  "gold": "not applicable",
+  "pred": "not excluded",
+  "gold_ev": [
+   0
+  ],
+  "pred_ev": [
+   0
+  ],
+  "note": "0. A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.\n1. He is toxic-appearing, and leans forward while sitting on his mother's lap.\n2. He is drooling and speaks with a muffled \"hot potato\" voice.\n3. The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.\n4. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+  "raw": "{\"label\": \"not excluded\", \"evidence\": [0]}",
+  "kind": "not applicable->not excluded"
+ },
+ {
+  "annotation_id": 164,
+  "type": "inclusion",
+  "criterion": "Patients undergoing surgical lower limb revascularisation (suprainguinal or infrainguinal)",
+  "gold": "not included",
+  "pred": "included",
+  "gold_ev": [],
+  "pred_ev": [
+   0
+  ],
+  "note": "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.\n1. She is now complaining of a cool right foot.\n2. Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+  "raw": "{\"label\": \"included\", \"evidence\": [0]}",
+  "kind": "not included->included"
+ },
+ {
+  "annotation_id": 176,
+  "type": "inclusion",
+  "criterion": "No medical history of central vena catheterization.",
+  "gold": "included",
+  "pred": "not included",
+  "gold_ev": [
+   0
+  ],
+  "pred_ev": [
+   0
+  ],
+  "note": "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.\n1. She is now complaining of a cool right foot.\n2. Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+  "raw": "{\"label\": \"not included\", \"evidence\": [0]}",
+  "kind": "included->not included"
+ },
+ {
+  "annotation_id": 177,
+  "type": "inclusion",
+  "criterion": "Maintenance hemodialysis after central vena catheterization.",
+  "gold": "not included",
+  "pred": "not enough information",
+  "gold_ev": [],
+  "pred_ev": [],
+  "note": "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.\n1. She is now complaining of a cool right foot.\n2. Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.\n3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+  "raw": "{\"label\": \"not enough information\", \"evidence\": []}",
+  "kind": "not included->not enough information"
+ },
+ {
+  "annotation_id": 185,
+  "type": "inclusion",
+  "criterion": "Patients were included if they were diagnosed with Shock, Acute respiratory distress syndrome (ARDS), or both.",
+  "gold": "included",
+  "pred": "not enough information",
+  "gold_ev": [
+   2,
+   3
+  ],
+  "pred_ev": [
+   0
+  ],
+  "note": "0. A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.\n1. She denies trauma.\n2. On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.\n3. Her body temperature is normal and her blood pressure is 80/60.\n4. Her right arm has no discoloration or movement limitation.\n5. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+  "raw": "{\"label\": \"not enough information\", \"evidence\": [0]}",
+  "kind": "included->not enough information"
+ },
+ {
+  "annotation_id": 325,
+  "type": "inclusion",
+  "criterion": "Genetic patients",
+  "gold": "not enough information",
+  "pred": "included",
+  "gold_ev": [],
+  "pred_ev": [
+   0
+  ],
+  "note": "0. A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.\n1. The physical examination is remarkable for tenderness and positive Murphy sign.\n2. Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.\n3. Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.\n4. After surgery, the patient is taken to the ICU.\n5. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+  "raw": "{\"label\": \"included\", \"evidence\": [0]}",
+  "kind": "not enough information->included"
+ },
+ {
+  "annotation_id": 422,
+  "type": "inclusion",
+  "criterion": "If female, using birth control",
+  "gold": "not applicable",
+  "pred": "not enough information",
+  "gold_ev": [
+   3
+  ],
+  "pred_ev": [
+   3
+  ],
+  "note": "0. A 15-year-old girl presents to the ER with abdominal pain.\n1. The pain appeared gradually and was periumbilical at first, localizing to the right lower quadrant over hours.\n2. She has had no appetite since yesterday but denies diarrhea.\n3. She has had no sexual partners and her menses are regular.\n4. On examination, she has localized rebound tenderness over the right lower quadrant.\n5. On an abdominal ultrasound, a markedly edematous appendix is seen.\n6. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+  "raw": "{\"label\": \"not enough information\", \"evidence\": [3]}",
+  "kind": "not applicable->not enough information"
+ }
+]

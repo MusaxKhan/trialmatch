@@ -1,0 +1,64 @@
+{
+ "hf_default_generation_config": {
+  "do_sample": true,
+  "temperature": 0.7,
+  "top_k": 20,
+  "top_p": 0.8,
+  "repetition_penalty": 1.1
+ },
+ "equivalence_hf_penalty_off": [
+  {
+   "in_len": 128,
+   "out_len": 16,
+   "cached_eq_hf_pure_greedy": true
+  },
+  {
+   "in_len": 128,
+   "out_len": 64,
+   "cached_eq_hf_pure_greedy": true
+  },
+  {
+   "in_len": 128,
+   "out_len": 128,
+   "cached_eq_hf_pure_greedy": true
+  },
+  {
+   "in_len": 512,
+   "out_len": 16,
+   "cached_eq_hf_pure_greedy": true
+  },
+  {
+   "in_len": 512,
+   "out_len": 64,
+   "cached_eq_hf_pure_greedy": true
+  },
+  {
+   "in_len": 512,
+   "out_len": 128,
+   "cached_eq_hf_pure_greedy": true
+  },
+  {
+   "in_len": 1024,
+   "out_len": 16,
+   "cached_eq_hf_pure_greedy": true
+  },
+  {
+   "in_len": 1024,
+   "out_len": 64,
+   "cached_eq_hf_pure_greedy": true
+  },
+  {
+   "in_len": 1024,
+   "out_len": 128,
+   "cached_eq_hf_pure_greedy": true
+  }
+ ],
+ "test_prompts_engine_vs_hf_pure_greedy": {
+  "n": 206,
+  "identical": 206
+ },
+ "hf_assisted_vs_engine": {
+  "n": 20,
+  "identical": 18
+ }
+}
