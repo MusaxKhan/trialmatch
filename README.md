@@ -22,7 +22,7 @@ What is implemented here (everything except the pretrained weights/tokenizers is
 
 ## Quick start (local machine, browser app)
 
-1. Python 3.10+; an NVIDIA GPU is recommended (the app also runs on CPU in fp32, but slowly).
+1. Python 3.10+; an NVIDIA GPU is recommended (the code has a CPU fp32 fallback, but it was not tested on a CPU-only machine; the demo and all benchmarks ran on a Colab T4).
 2. `pip install -r requirements.txt`
 3. Download the adapters (see **Model weights** below) and unpack so that you have
    `adapters/target/adapter_model.safetensors` and `adapters/draft/adapter_model.safetensors`.
