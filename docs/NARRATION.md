@@ -24,22 +24,11 @@ results folder, and all GPT-4 fields were removed before training. The test set 
 
 **3. Screening** *(~95 s)*
 
-This is the app, running locally from the command line, so no notebook is needed. The header shows the models and
-the device. I load the synthetic sample and press run. For every criterion we see the label, the cited sentence
-numbers with their text, and an explanation built only from those sentences. For example, the diabetes
-criterion is labelled included, and the evidence sentence is shown right here. When a label is definitive but
-no sentence is cited, the app flags it as unsupported, as you can see for the exclusion criteria. At the top is
-the overall outcome. It comes from four simple rules, shown in the About tab: any excluded or not-included
-criterion makes the patient likely ineligible, missing information makes the outcome undetermined, and only
-when everything is satisfied is the patient preliminarily eligible. This is an aggregation of criterion labels,
-not ground truth. And the model can say not enough information, so absence of evidence is never treated as
-eligibility.
+This is the app, running from the command line, so no notebook is needed. The header shows the models and the GPU. I load the synthetic sample and press run. For every criterion we see the label, the cited sentence numbers with their text, and an explanation built only from those sentences. Each criterion takes about two thirds of a second on the T4. The angina criterion is labelled included, supported by sentence zero. The diabetes criterion is also labelled included, which is right, but look at the evidence: the model cited sentence one, about the chest pain, while the diabetes is in sentence two. So the label is correct and the citation is wrong, and showing the evidence is what lets a reviewer catch that. For the exclusion criteria the model says not excluded without citing anything, and the app flags those as unsupported. At the top is the overall outcome, from four simple rules in the About tab: any excluded or not-included criterion makes the patient likely ineligible, missing information makes the outcome undetermined, and only when everything is satisfied is the patient preliminarily eligible. This is an aggregation of criterion labels, not ground truth.
 
 **4. Input validation** *(~35 s)*
 
-The app handles bad input. If I clear the note and run, I get a clear error message instead of a crash. If I
-add a criterion with almost no text, I get an error as well, and the server keeps working. I can also paste a
-completely new note and new criteria, which is how an unseen case would be tested.
+The app handles bad input. If I clear the note and run, I get a clear error message instead of a crash, and the server keeps working. The same happens for criteria with an invalid type or almost no text. I can also paste a completely new note and new criteria, which is how an unseen case would be tested.
 
 **5. Report export** *(~30 s)*
 
@@ -49,23 +38,11 @@ time, together with the disclaimer that this is not a clinical decision.
 
 **6. Inference lab** *(~65 s)*
 
-The Inference lab runs the same criteria through three decoders. First, no cache, where every new token
-recomputes the whole sequence. Second, my KV-cache decoder, which processes the prompt once and then one token
-per step, reusing stored keys and values; for this model that is 28 kilobytes per token. Third, speculative
-decoding, where a fine-tuned 0.5 billion parameter draft proposes tokens and the 1.5 billion target verifies
-them in one pass. The table shows time, tokens per second, memory and whether the tokens are identical. They
-are. In the paper, measured on a Colab T4, the cache is 1.3 to 9 times faster depending on prompt length.
-Speculative decoding is correct but slower, about 0.8 to 0.9 times the speed of cached decoding, because in
-my PyTorch engine the small draft costs the same 43 milliseconds per token as the large model. Here the app
-is running on a laptop CPU, so absolute times are different.
+The Inference lab runs the same criteria through three decoders. First, no cache, where every new token recomputes the whole sequence. Second, my KV-cache decoder, which processes the prompt once and then one token per step, reusing stored keys and values; for this model that is 28 kilobytes per token. Third, speculative decoding, where a fine-tuned 0.5 billion parameter draft proposes tokens and the 1.5 billion target verifies them in one pass. Live on the T4, for these five criteria, no cache took 4.2 seconds, the cache 2.5 seconds, and speculative decoding 3.1 seconds with 90 percent of the draft tokens accepted. In all three modes the tokens are identical. So the cache clearly helps, and speculative decoding is correct but slower than plain caching. The paper measures this carefully: the cache is 1.3 to 9 times faster depending on prompt length, and speculative decoding runs at about 0.8 to 0.9 times the cached speed, because in my PyTorch engine the small draft costs the same 43 milliseconds per token as the large model.
 
 **7. Attention lab** *(~35 s)*
 
-The Attention lab compares three implementations: the reference attention, my tiled online-softmax attention,
-and PyTorch's fused kernel. All are checked against a float64 computation. In float32 the error is about
-1.6 times ten to the minus five for all three. The tiled version never builds the full score matrix; on the T4 it
-used 51 megabytes at length 4096 against 2.3 gigabytes for the reference, but it is slower in pure PyTorch, and
-the fused kernel is fastest.
+The Attention lab compares three implementations: the reference attention, my tiled online-softmax attention, and PyTorch's fused kernel, all checked against a float64 computation. At sequence length 2048 in half precision, all three have the same error, about 7.7 times ten to the minus four, which is just fp16 rounding. In float32, in the paper, the error is about 1.6 times ten to the minus five. The tiled version never builds the full score matrix: here it used 16 megabytes against 384 for the reference, and in the paper at length 4096 it used 51 megabytes against 2.3 gigabytes. But it is much slower in pure PyTorch, 298 milliseconds against 13 for the reference and half a millisecond for the fused kernel, because every tile is a separate kernel launch.
 
 **8. Experiments and results** *(~40 s)*
 

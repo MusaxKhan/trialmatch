@@ -46,8 +46,13 @@ page instead of crashing; the model is loaded once at start-up and `/api/status`
 
 ## Model weights
 
-Fine-tuned LoRA adapters (≈74 MB target, ≈35 MB draft): **`<ADAPTER DOWNLOAD LINK — fill in>`**
-(`python scripts/download_adapters.py <url>` unpacks them into `adapters/`). Base weights
+Fine-tuned LoRA adapters (≈74 MB target, ≈35 MB draft), hosted as a GitHub release asset:
+**https://github.com/MusaxKhan/trialmatch/releases/download/v1.0/adapters.zip**
+
+```bash
+python scripts/download_adapters.py https://github.com/MusaxKhan/trialmatch/releases/download/v1.0/adapters.zip
+```
+(unpacks into `adapters/target` and `adapters/draft`). Base weights
 (`Qwen/Qwen2.5-1.5B-Instruct`, `Qwen/Qwen2.5-0.5B-Instruct`, Apache-2.0) are pulled from Hugging Face.
 
 ## Reproducing the experiments (Google Colab T4)
