@@ -20,6 +20,8 @@ What is implemented here (everything except the pretrained weights/tokenizers is
 | Browser application | `app/app.py`, `app/static/index.html` | FastAPI, no notebook needed |
 | IEEE paper (LaTeX) | `report/main.tex` | |
 
+Demo video (≈6 min): https://github.com/MusaxKhan/trialmatch/releases/download/v1.0/TrialMatch_demo_23i-0526.mp4
+
 ## Quick start (local machine, browser app)
 
 1. Python 3.10+; an NVIDIA GPU is recommended (the code has a CPU fp32 fallback, but it was not tested on a CPU-only machine; the demo and all benchmarks ran on a Colab T4).
